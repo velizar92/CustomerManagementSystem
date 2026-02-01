@@ -8,7 +8,7 @@
         Title="MainWindow" Height="450" Width="800">
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition Height="2*"/>
+            <RowDefinition Height="90"/>
             <RowDefinition Height="7*"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
@@ -17,7 +17,25 @@
             <ColumnDefinition Width="3*"/>
         </Grid.ColumnDefinitions>
 
-        <!-- Left navigation (sidebar)-->
+        <!-- Header -->
+        <Grid Grid.Row="0" Grid.ColumnSpan="2" Background="#1A237E">
+            <Viewbox Stretch="Uniform" HorizontalAlignment="Left" VerticalAlignment="Center">
+                <StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Left">
+                    <!-- Logo -->
+                    <Image Source="Resources/Images/logo.png" Width="40" Height="50" Margin="10,0,10,0"/>
+                    <!-- App Header Text -->
+                    <TextBlock Text="Customer Management System"
+                       Foreground="White"
+                       FontWeight="Bold"
+                       TextAlignment="Left"
+                       Margin="0,20,20,0"
+                       />
+                  </StackPanel>
+            </Viewbox>
+        </Grid>
+
+
+    <!-- Left navigation (sidebar)-->
         <StackPanel Background="#1A237E" Grid.Row="1" Grid.Column="0" Orientation="Vertical">
             <Button Style="{StaticResource SidebarButtonStyle}" Content="Dashboard"/>
             <Button Style="{StaticResource SidebarButtonStyle}" Content="Customers"/>
