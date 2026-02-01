@@ -43,5 +43,15 @@
             <Button Style="{StaticResource SidebarButtonStyle}" Content="Settings"/>
             <Button Style="{StaticResource SidebarButtonStyle}" Content="About"/>
         </StackPanel>
+
+        <!-- Footer-->
+        <Grid Grid.Row="2" Grid.ColumnSpan="2" Background="#1A237E">
+            <TextBlock Text="© 2026 My Company"
+               Foreground="White"
+               HorizontalAlignment="Center"
+               VerticalAlignment="Center"
+               FontSize="20"/>
+        </Grid>
     </Grid>
+    
 </Window>
