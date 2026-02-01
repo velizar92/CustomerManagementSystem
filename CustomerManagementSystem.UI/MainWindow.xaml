@@ -7,6 +7,24 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="7*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="3*"/>
+        </Grid.ColumnDefinitions>
 
+        <StackPanel Grid.Row="1" Grid.Column="0" Orientation="Vertical">
+            <Button Style="{StaticResource SidebarButtonStyle}" Content="Dashboard"/>
+
+
+            <Button Style="{StaticResource SidebarButtonStyle}" Content="Customers"/>
+            <Button Style="{StaticResource SidebarButtonStyle}" Content="Create Customer"/>
+            <Button Style="{StaticResource SidebarButtonStyle}" Content="Settings"/>
+            <Button Style="{StaticResource SidebarButtonStyle}" Content="About"/>
+        </StackPanel>
     </Grid>
 </Window>
