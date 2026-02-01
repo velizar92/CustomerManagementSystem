@@ -7,7 +7,7 @@
 
         <!-- Layout -->  
         <Setter Property="Height" Value="40"/>
-        <Setter Property="Margin" Value="3"/>
+        <Setter Property="Margin" Value="5 3 3 5"/>
         <Setter Property="FontSize" Value="18"/>
         
         <!-- Visuals -->

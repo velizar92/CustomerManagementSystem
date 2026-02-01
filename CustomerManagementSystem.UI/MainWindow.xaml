@@ -17,10 +17,9 @@
             <ColumnDefinition Width="3*"/>
         </Grid.ColumnDefinitions>
 
-        <StackPanel Grid.Row="1" Grid.Column="0" Orientation="Vertical">
+        <!-- Left navigation (sidebar)-->
+        <StackPanel Background="#1A237E" Grid.Row="1" Grid.Column="0" Orientation="Vertical">
             <Button Style="{StaticResource SidebarButtonStyle}" Content="Dashboard"/>
-
-
             <Button Style="{StaticResource SidebarButtonStyle}" Content="Customers"/>
             <Button Style="{StaticResource SidebarButtonStyle}" Content="Create Customer"/>
             <Button Style="{StaticResource SidebarButtonStyle}" Content="Settings"/>
